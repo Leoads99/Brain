@@ -51,57 +51,76 @@ def removertudo(lista_nomes,lista_exames):
 #Define uma função que printa as listas 
 def mostrar(lista1,lista2):
     print(lista1, lista2)
-        
+
+    
+#Define uma função que busca o paciente e retorna seus exames
+def find_pacient():
+    print
+    ('**Digite o nome conforme o inserido anteriormente,'
+    f'{Fore.BLUE} se tiver digitado nome inteiro então, digite o nome inteiro.'
+    f'{Fore.BLUE} se tiver inserido apenas o primeiro nome, então, digite o primeiro nome**') 
+    name_pacient = str(input('Para buscar, digite o nome do paciente:\n'))
+    localizator = covid_pacients_dictionary.get(name_pacient)
+    print('                                                                                ')
+    print (f'O paciente {name_pacient} tem os seguintes exames pendentes:\n' 
+        f'{localizator}')
+
         
 acao = 0
-while acao != 4:
+while acao != 5:
     print(linha)
     try:
         acao = int(input(Fore.BLUE+'DIGITE\n'
                     f'{Fore.WHITE}[1] para adicionar um paciente e exame realizado\n' 
                     f'{Fore.WHITE}[2] para remover\n' 
-                    f'{Fore.WHITE}[3] para exibir os pacientes e exames\n' 
-                    f'{Fore.WHITE}[4] para sair\n'))
+                    f'{Fore.WHITE}[3] para exibir os pacientes e exames\n'
+                    f'{Fore.WHITE}[4] para buscar os exames do paciente pelo nome\n' 
+                    f'{Fore.WHITE}[5] para sair\n'))
     except ValueError as err:
         print('OPÇÃO INVÁLIDA!')
-    time.sleep(2)
+    time.sleep(1)
     if acao == 1:
         print('=='*25)
         nome = str(input(f'{Fore.BLUE} Digite o nome do Paciente:\n')).upper()
         print('=='*25)
         lnome.append(nome)
         tira_acento_um(lnome)
-        nome = dict(itertools.zip_longest(*[iter(lnome)] * 2, fillvalue=""))
+        #nome = dict(itertools.zip_longest(*[iter(lnome)] * 2, fillvalue=""))
         print(nome)
-        time.sleep(2)
+        time.sleep(1)
         exames = str(input(f'{Fore.BLUE} Digite os exames do Paciente:\n')).upper()
         print('=='*25)
         lexames.append(exames)
         tira_acento_dois(lexames)
-        exames = dict(itertools.zip_longest(*[iter(lexames)] * 2, fillvalue=""))
+        covid_pacients_dictionary = dict(zip(lnome, lexames))
+        #exames = dict(itertools.zip_longest(*[iter(lexames)] * 2, fillvalue=""))
         print(exames)
-        time.sleep(2)
+        time.sleep(1)
         print(lnome)
         print('=='*25)
         print(lexames)
         print('=='*25)
-        time.sleep(2)
+        time.sleep(1)
     if acao == 2:
         input(f'{Fore.BLUE} \nPara remover um paciente, Pressione ENTER para continuar')
         print('=='*25)
         removertudo(lnome,lexames)
-        time.sleep(2)
+        time.sleep(1)
         print(linha)
         print(f'{Fore.BLUE} | PACIENTES | | EXAMES ADICIONADOS| :\n')
         print(linha)
         print(lnome)
         print(lexames)
-        time.sleep(2)
+        time.sleep(1)
     if acao == 3:
         print(linha)
         print(f'{Fore.BLUE} | PACIENTES | | EXAMES ADICIONADOS| :\n')
         print(linha)
         mostrar(lnome,lexames)
+        time.sleep(1)
+    if acao == 4:
+        print('=='*25)
+        find_pacient()
         time.sleep(2)
 else:
     print (f'{Fore.RED} SAINDO DO GERENCIADOR\n')
