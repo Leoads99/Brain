@@ -4,7 +4,8 @@
 
 
 # GERENCIADOR DE COVID-19
-Autor: Leonardo Souza
+Autor: 
+***Leonardo Souza***
 
 <p>Este programa tem como objetivo auxiliar o gerenciamento de prontuários de pacientes que estão sendo atendidos em setores COVID-19 do pronto socorro (ou algo similar) e que estão com suspeita ou confirmação de testagem positiva para **COVID-19**.</p>
 
