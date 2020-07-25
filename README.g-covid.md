@@ -38,3 +38,9 @@ O programa contém um menu com seis opções de comando, cada um sendo relaciona
 **[6]** para sair do programa
 
 - Exibe uma mensagem de despedida e sai do programa
+
+
+## O programa ainda será mais ainda implementado ao decorrer do meu avanço em Python 
+Porém, como se trata de uma programa apenas para estudo, não pretendo torná-lo muito avançado ou significativo, assim como todo o conteúdo do repositório BRAIN, são projetos para estudo e pequenas ideias não profissionais em Python. 
+
+
