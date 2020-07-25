@@ -7,7 +7,7 @@
 Autor: 
 ***Leonardo Souza***
 
-<p>Este programa tem como objetivo auxiliar o gerenciamento de prontuários de pacientes que estão sendo atendidos em setores COVID-19 do pronto socorro (ou algo similar) e que estão com suspeita ou confirmação de testagem positiva para **COVID-19**.</p>
+Este programa tem como objetivo auxiliar o gerenciamento de prontuários de pacientes que estão sendo atendidos em setores COVID-19 do pronto socorro (ou algo similar) e que estão com suspeita ou confirmação de testagem positiva para **COVID-19**.
 
 <p>Feito especificamente para setores ou subsetores de agência de reavaliação, onde o responsável auxiliar administrativo ou mensageiro hospitalar cuida da triagem de exames, verificando assim se os exames dos pacientes que realizaram consulta estão finalizados ou não.</p> 
 
