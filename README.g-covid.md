@@ -10,7 +10,7 @@ Autor: Leonardo Souza
 
 <p>Feito especificamente para setores ou subsetores de agência de reavaliação, onde o responsável auxiliar administrativo ou mensageiro hospitalar cuida da triagem de exames, verificando assim se os exames dos pacientes que realizaram consulta estão finalizados ou não.</p> 
 
-<p>O programa contém um menu com seis opções de comando, cada um sendo relacionado a uma função equivalente e tendo como **EXCEÇÃO** o comando número seis [6], já que este mesmo para serve apenas para parar e sair do programa.</p> 
+<p>O programa contém um menu com seis opções de comando, cada um sendo relacionado a uma função equivalente e tendo como EXCEÇÃO o comando número seis [6], já que este mesmo para serve apenas para parar e sair do programa.</p> 
 
 ## Listagem das funções de cada comando:
 
